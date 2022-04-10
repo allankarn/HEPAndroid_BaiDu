@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".course.FocusDetailsActivity">
+
+    <com.enetedu.hep.utils.SimpleToolbar
+        android:id="@+id/simple_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:id="@+id/txt_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/left1_2x"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/txt_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="集中"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="visible"/>
+
+    </com.enetedu.hep.utils.SimpleToolbar>
+
+    <com.enetedu.hep.utils.TwoBallRotationProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="以学习者为中心的信息化教学模式创新"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_tu"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_tu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所属学科："/>
+
+            <TextView
+                android:id="@+id/tv_suoshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他-其他类"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_tu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应用分类："/>
+
+            <TextView
+                android:id="@+id/tv_fenlei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高校工作人员专题培训"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_tu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报名时间："/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-10-11"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll3"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_tu">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开课时间："/>
+
+            <TextView
+                android:id="@+id/tv_kaishitime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-07-29"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="wrap_content"
+        app:tabMode="scrollable"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/toolbar"
+        app:tabSelectedTextColor="@color/toolbar"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tv_baoming"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_ming"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/pens"
+                android:gravity="center"
+                android:text="现在报名"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/tv_pangting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_pang"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:drawableLeft="@mipmap/shopping"
+                android:gravity="center"
+                android:text="旁听观摩"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

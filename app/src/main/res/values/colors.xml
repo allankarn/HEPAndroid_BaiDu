@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="tab_bottom_selected">#418BB7</color>
+    <color name="tab_bottom_normal">#08080A</color>
+    <color name="toolbar">#527FE6</color>
+    <color name="red">#D7504C</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_46">#464646</color>
+
+
+    <color name="base_e4">#E4E4E4</color>
+
+    <color name="study1">#F2CC5F</color>
+    <color name="study2">#A6D64F</color>
+    <color name="study3">#ED9F55</color>
+    <color name="study4">#4899D0</color>
+    <color name="study5">#E36D69</color>
+</resources>

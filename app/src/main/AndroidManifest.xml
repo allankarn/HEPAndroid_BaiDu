@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.enetedu.hep"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <permission android:name="android.permission.WRITE_SETTINGS"/>
+    <permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <!-- 在SD卡中创建与删除文件的权限 -->
+    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:testOnly="false"
+        android:name=".config.MyApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/logo_2x"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:appComponentFactory="12"
+        tools:replace="android:appComponentFactory"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="p">
+        <meta-data
+            android:name="BDAPPID"
+            android:value="6181730"/>
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="870G157dZCOosRmCnHeXA5Zk"/>
+
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity
+            android:name=".login.LoginActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name=".login.RegisterActivity">
+        </activity>
+        <activity android:name=".login.RetrievePwdActivity">
+        </activity>
+        <activity android:name=".course.FocusActivity">
+        </activity>
+        <activity android:name=".course.ShopActivity">
+        </activity>
+        <activity android:name=".course.FocusDetailsActivity">
+        </activity>
+        <activity android:name=".my.SetActivity">
+        </activity>
+        <activity android:name=".my.MyActivity">
+        </activity>
+        <activity android:name=".course.OnlineActivity">
+        </activity>
+        <activity android:name=".course.OnlineDetailsActivity">
+        </activity>
+        <activity android:name=".course.PlayActivity">
+        </activity>
+        <activity android:name=".course.LunBoWebActivity">
+        </activity>
+        <activity android:name=".course.LiveDetailsActivity">
+        </activity>
+        <activity android:name=".news.NewsDetailsActivity">
+        </activity>
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="667"/>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4"/>
+
+        <activity android:name=".course.FreeCourseActivity">
+        </activity>
+        <activity android:name=".course.ZiCourseAffirmActivity">
+        </activity>
+        <activity android:name=".study.StudyLinkActivity">
+        </activity>
+        <activity android:name=".study.JobActivity">
+        </activity>
+        <activity
+            android:name=".study.StudyMyCourseActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".my.MyCertificateActivity">
+        </activity>
+        <activity android:name=".my.ArchivesActivity">
+        </activity>
+        <activity android:name=".my.UserEditActivity">
+        </activity>
+        <activity android:name=".my.ChangePwdActivity">
+        </activity>
+        <activity android:name=".my.WebViewActivity">
+        </activity>
+        <activity
+            android:name=".course.VideoPlayForMgcActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".course.LijiStudyActivity">
+        </activity>
+        <activity android:name=".my.NationActivity">
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.enetedu.hep.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths"/>
+        </provider>
+
+        <activity android:name=".course.SignUpActivity">
+        </activity>
+        <activity android:name=".course.SignUpSaveEditActivity">
+        </activity>
+        <activity android:name=".login.WelComeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".login.AgreementActivity">
+        </activity>
+        <activity android:name=".course.WeikeActivity">
+        </activity>
+        <activity
+            android:exported="true"
+            android:name=".wxapi.WXEntryActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoDisplay"/>
+
+    </application>
+
+</manifest>

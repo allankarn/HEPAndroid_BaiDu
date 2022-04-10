@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6FC8F6"
+    android:gravity="center"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="20dp">
+
+    <TextView
+        android:paddingHorizontal="16dp"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="1.课程缴费"
+        android:background="#F2CC5F"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+</RelativeLayout>

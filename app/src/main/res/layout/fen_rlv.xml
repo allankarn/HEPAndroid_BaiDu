@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/tv_fen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3C95D5"
+        android:padding="10dp"
+        android:text="分会场"
+        android:textColor="#ffffff"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rlv_fen"
+        android:layout_below="@id/tv_fen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

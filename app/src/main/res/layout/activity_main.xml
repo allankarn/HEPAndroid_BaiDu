@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/toolbar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#F8FAFC"
+            android:textSize="16sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <RadioGroup
+        android:id="@+id/GP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_course"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_course"
+            android:gravity="center"
+            android:text="课程"
+            android:textColor="@drawable/main_button_selector"
+            android:textSize="15sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_news"
+            android:gravity="center"
+            android:text="资讯"
+            android:textColor="@drawable/main_button_selector"
+            android:textSize="15sp"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_study"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_study"
+            android:gravity="center"
+            android:text="学习"
+            android:textColor="@drawable/main_button_selector"
+            android:textSize="15sp"
+            />
+
+
+
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/button_my"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/main_button_selector"
+            android:textSize="15sp"
+            />
+    </RadioGroup>
+
+</LinearLayout>

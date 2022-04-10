@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_zhibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="[在线]"
+        android:textColor="@color/toolbar"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_couse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_zhibo"
+        android:layout_marginTop="10dp"
+        android:text="经济学类在线课程建设与课堂运用"
+        android:textColor="@color/tab_bottom_normal"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/base_e4"/>
+</RelativeLayout>

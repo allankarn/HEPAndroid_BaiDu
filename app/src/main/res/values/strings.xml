@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">教师发展在线</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="input_email_please">请输入有效的邮箱</string>
+    <string name="input_pwd_please">请输入密码</string>
+    <string name="input_len_err_pwd">密码最少%d位</string>
+    <string name="input_len_err_newpwd">新密码最少%d位</string>
+    <string name="input_len_err_loginname">邮箱最少%d位</string>
+    <string name="wait_latter">加载中...</string>
+
+    <string name="err_date_respons">响应数据错误</string>
+    <string name="err_server">服务器错误</string>
+    <string name="err_crash">很抱歉,程序出现异常,即将退出</string>
+    <string name="err_video_unsurport">抱歉，视频不存在或设备不支持此视频格式</string>
+    <string name="err_video_translating">抱歉，视频正在转码，5秒后自动重试！</string>
+    <string name="err_net_disable">网络不可用,请检查网络是否已连接</string>
+    <string name="err_server_unconnect">无法连接到服务器</string>
+    <string name="err_server_connect_timeout">超时，请重试</string>
+    <string name="err_centralize_invalid">播放地址无效</string>
+    <string name="err_no_course">没有相关课堂</string>
+    <string name="err_no_cart">没有相关课单</string>
+    <string name="course_center_null">分中心为空</string>
+    <string name="err_user_unexist">用户不存在</string>
+    <string name="err_pwd">密码不正确</string>
+    <string name="err_account_disabled">帐号已停用</string>
+    <string name="err_account_expired">帐号已过期</string>
+    <string name="err_account_unactive">账号未激活</string>
+    <string name="err_register_fail">注册失败</string>
+    <string name="err_user_duplicate">用户重复</string>
+    <string name="err_update_fail">修改失败</string>
+    <string name="err_no_data">没有相关数据</string>
+    <string name="err_reply_fail">回复失败</string>
+    <string name="err_data_duplicate">数据重复</string>
+    <string name="err_upload_fail">上传失败</string>
+</resources>

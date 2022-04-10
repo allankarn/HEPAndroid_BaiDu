@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'mtj-circle-plugin'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.enetedu.hep"
+        minSdkVersion 18
+         targetSdkVersion 29
+
+        versionCode 24
+        versionName "4.13"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    MtjCirclePluginConfig {
+        // 设置appkey，必须设置，否则插件使用无效
+        appkey = '108e19ea6d'
+        // 设置debug 开关，默认关闭，如果需要查看日志则打开开关（true），建议正式版关闭以避免影响性能
+        debug = false
+        // 默认启动此插件，如果开发者不需要可以禁用（false）
+        enabled = true
+    }
+    // 通过该接口可以控制隐私权限策略的数据采集，true表示可以采集，false表示不可以采集，请在Application里优先调用
+    // 采集这些数据可以帮助App运营人员更好的监控App的使用情况，
+    // 建议有用户隐私策略弹窗的App，用户未同意前设置false,同意之后设置true
+    //  StatService.setAuthorizedState(context,false)
+    //导入智能更新SDK 的AAR 文件
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+
+dependencies {
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // implementation files('libs/bd_autoupdate_sdk_release_1_3_1.aar')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //轮播图
+    implementation 'com.github.dzs-yaodi:Banner:1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    //万能适配器
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.zhihu.android:matisse:0.5.1'
+    //1.0.5 当1.1.0出现问题可以回退到1.0.5.1
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+
+    //图片加载库
+    implementation 'com.github.bumptech.glide:glide:3.6.1'
+    //竖直tab栏
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+
+    //今日头条屏幕适配
+    implementation 'me.jessyan:autosize:1.1.2'
+    //implementation 'org.sufficientlysecure:html-textview:3.9'
+    implementation 'fm.jiecao:jiecaovideoplayer:5.5.2'  //视频播放器
+    //地区选择器
+    implementation 'liji.library.dev:citypickerview:5.2.2'
+    //日期选择器
+    implementation 'com.weigan:loopView:0.2.2'
+    //图片选择器
+    implementation 'com.zhihu.android:matisse:0.5.2-beta2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //折叠TextView
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+    implementation 'org.jsoup:jsoup:1.10.1'
+
+    implementation files('libs/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar')
+}

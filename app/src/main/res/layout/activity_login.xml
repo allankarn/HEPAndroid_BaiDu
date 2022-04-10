@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginbg"
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:layout_width="94dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/logo_2x"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="全国高校教师网络培训中心"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/white_bg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_bg_shape"
+            >
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:background="@null"
+                android:hint="请输入用户名"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="44dp"
+                android:background="@mipmap/icon_man1_2x"
+                app:layout_constraintBottom_toBottomOf="@+id/ed_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ed_name"/>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_marginTop="12dp"
+                android:background="#999999"
+                app:layout_constraintEnd_toEndOf="@+id/ed_name"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/ed_name"/>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:srcCompat="@mipmap/icon_psd_2x"/>
+
+            <EditText
+                android:id="@+id/ed_pwd"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="@+id/ed_name"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="44dp"
+            android:layout_marginTop="178dp"
+            android:background="@mipmap/login"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="44dp"
+            android:layout_marginTop="24dp"
+            android:background="@mipmap/register"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/find_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/register_btn"
+            android:text="找回密码?"
+            android:textColor="@color/tab_bottom_normal"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/find_pwd"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击登录，即表示已阅读并同意"
+                android:textColor="@color/tab_bottom_normal"
+                />
+
+            <TextView
+                android:id="@+id/tv_xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《隐私政策》"
+                android:textColor="@color/tab_bottom_normal"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="8dp"
+         android:layout_marginEnd="8dp"
+         android:layout_marginStart="8dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         >
+
+         <TextView
+
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="教APP备1100743号"
+             />
+          <ImageView
+              android:id="@+id/cb_"
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:background="@mipmap/weixuanzhong"/>
+
+          <TextView
+              android:id="@+id/tv_yuedu"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/cb_"
+              android:text="我已阅读并同意"
+              android:textColor="@color/tab_bottom_normal"/>
+
+          <TextView
+              android:id="@+id/tv_xieyi"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:layout_toRightOf="@id/tv_yuedu"
+              android:text="《隐私协议》"
+              android:textColor="@color/toolbar"/>
+     </RelativeLayout>-->
+    <TextView
+        android:id="@+id/tv_wx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="教APP备1100743号"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

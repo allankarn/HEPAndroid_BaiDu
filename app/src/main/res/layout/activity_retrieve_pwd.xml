@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.RetrievePwdActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar">
+
+        <ImageView
+            android:id="@+id/iv_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/left1_2x"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="找回密码"
+            android:textColor="#F8FAFC"
+            android:textSize="16sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/et_shape"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iphone_2x"/>
+
+        <EditText
+            android:id="@+id/ed_phone"
+            style="@style/addstudent_text"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入注册时使用的手机号"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_shape"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iphone_2x"/>
+
+        <EditText
+            android:id="@+id/ed_yanzheng"
+            style="@style/addstudent_text"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入短信验证码"/>
+
+        <TextView
+            android:id="@+id/tv_fasong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送验证码"
+            android:textColor="#E49550"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_shape"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/lock_2x"/>
+
+        <EditText
+            android:id="@+id/ed_newpwd"
+            style="@style/addstudent_text"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入新密码"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/et_shape"
+        android:gravity="center"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/lock_2x"/>
+
+        <EditText
+            android:id="@+id/ed_newpwd2"
+            style="@style/addstudent_text"
+            android:layout_marginLeft="20dp"
+            android:hint="确认密码"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tijiao"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/verify"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>
