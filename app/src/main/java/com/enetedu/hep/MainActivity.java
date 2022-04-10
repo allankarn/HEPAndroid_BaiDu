@@ -17,7 +17,7 @@ import com.enetedu.hep.news.NewsFragment;
 import com.enetedu.hep.study.StudyFragment;
 
 public class MainActivity extends BaseActivityPro {
-
+    //爱生活爱自己
 
     private TextView mToolbarTv;
     private Toolbar mToolbar;
