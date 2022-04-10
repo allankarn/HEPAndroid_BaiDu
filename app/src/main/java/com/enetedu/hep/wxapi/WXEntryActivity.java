@@ -14,7 +14,7 @@ import com.tencent.mm.opensdk.openapi.IWXAPIEventHandler;
 
 /**
  * 6.创建微信返回结果类,并在清单文件中配置
- * Created by Administrator on 2017/10/18.
+ * Created by Administrator on 2017/10/18. 相信未来 热爱生命
  */
 
 public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
